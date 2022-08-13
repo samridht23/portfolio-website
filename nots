@@ -1,0 +1,50 @@
+Ideas
+
+Home project About Contact -- header
+mail at bottom
+create not found page also
+light and dark theme
+make website github repo public 
+domain -->samridh.me
+main logo should be signature style logo of name
+
+
+color palet - 
+black 
+cream whtie #f3f3ef
+
+-------------------------------------------------------------------
+Stack and Technology used
+
+React
+React Router
+Chakra UI
+Vite
+Scss
+Emotions
+Framer Motion -- for animation 
+
+
+Will Use Stack
+
+Three.js -- for 3d model
+
+
+-------------------------------------------------------------------
+
+Project file structure
+
+index.js
+public
+src
+  App.jsx
+  main.jsx
+  pages contain project About contact pages
+  components contain resuable component
+-------------------------------------------------------------------
+Socials
+
+instagram
+twitter 
+dribble
+behance

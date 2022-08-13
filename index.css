@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "JetBrainMonoR";
+  src: url("fonts/webfonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrainMonoB";
+  src: url("fonts/webfonts/JetBrainsMono-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrainMonoI";
+  src: url("fonts/webfonts/JetBrainsMono-Italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrainMonoM";
+  src: url("fonts/webfonts/JetBrainsMono-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Signature";
+  src: url("fonts/webfonts/signature.otf") format("otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "JetBrainMonoR";
+}
