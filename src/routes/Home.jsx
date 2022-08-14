@@ -1,18 +1,15 @@
 import React from "react";
-import Navbar from "../components/navbar/Navbar";
-import { Outlet, Link } from "react-router-dom";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 const Home = () => {
   return (
-    <div>
-      <Box>
-        <Flex>
-          <Navbar />
-        </Flex>
-        <Outlet />
-      </Box>
-    </div>
+    <Box>
+      <Flex>
+        <Text fontSize={{ base: "2xl", sm: "4xl", lg: "5xl" }}>
+          Product Designer creating thoughtful, intutive interfaces
+        </Text>
+      </Flex>
+    </Box>
   );
 };
 

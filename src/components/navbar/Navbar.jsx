@@ -29,7 +29,7 @@ import {
 } from "@chakra-ui/icons";
 import { BsGithub, BsTwitter } from "react-icons/bs";
 import { AiFillHome, AiFillProject } from "react-icons/ai";
-import { MdQuestionAnswer } from "react-icons/md";
+import { MdQuestionAnswer, MdOutlineContactPage } from "react-icons/md";
 
 const Navbar = () => {
   return (
@@ -67,9 +67,18 @@ const Navbar = () => {
               variant={"ghost"}
             />
             <MenuList>
-              <MenuItem icon={<AiFillHome />}>Home</MenuItem>
-              <MenuItem icon={<AiFillProject />}>Projects</MenuItem>
-              <MenuItem icon={<MdQuestionAnswer />}>About</MenuItem>
+              <Link to="/">
+                <MenuItem icon={<AiFillHome />}>Home</MenuItem>
+              </Link>
+              <Link to="project">
+                <MenuItem icon={<AiFillProject />}>Projects</MenuItem>
+              </Link>
+              <Link to="about">
+                <MenuItem icon={<MdQuestionAnswer />}>About</MenuItem>
+              </Link>
+              <Link to="contact">
+                <MenuItem icon={<MdOutlineContactPage />}>Contact</MenuItem>
+              </Link>
               <MenuDivider />
               <MenuItem icon={<BsGithub />}>Github</MenuItem>
               <MenuItem icon={<BsTwitter />}>Twitter</MenuItem>
@@ -91,21 +100,7 @@ const DesktopNav = () => {
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
-              {/* <Link
-                p={1}
-                href={navItem.to}
-                fontSize={"sm"}
-                fontWeight={500}
-                color={linkColor}
-                _hover={{
-                  textDecoration: "none",
-                  color: linkHoverColor,
-                }}
-              >
-                {navItem.label}
-              </Link> */}
-              <Link to="/">Home</Link>
-              <Link to="/project">project</Link>
+              <Link to={`/${navItem.to}`}>{navItem.label}</Link>
             </PopoverTrigger>
           </Popover>
         </Box>
@@ -116,7 +111,7 @@ const DesktopNav = () => {
 const NAV_ITEMS = [
   {
     label: "Home",
-    to: "/",
+    to: "",
   },
   {
     label: "Projects",
@@ -124,11 +119,11 @@ const NAV_ITEMS = [
   },
   {
     label: "About",
-    href: "#",
+    to: "about",
   },
   {
     label: "Contact",
-    href: "#",
+    to: "contact",
   },
 ];
 
