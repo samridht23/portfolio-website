@@ -6,7 +6,6 @@ import {
   Stack,
   PopoverTrigger,
   Popover,
-  useColorModeValue,
   IconButton,
   Button,
   Input,
@@ -33,7 +32,13 @@ import { MdQuestionAnswer, MdOutlineContactPage } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <Box position={"relative"} w={"100%"} zIndex={2}>
+    <Box
+      position={"fixed"}
+      w={"100%"}
+      zIndex={2}
+      backdropFilter={"auto"}
+      backdropBlur={"20px"}
+    >
       <Flex
         justifyContent={"space-between"}
         alignItems={"center"}
@@ -46,9 +51,16 @@ const Navbar = () => {
         borderStyle={"solid"}
       >
         <Flex alignItems={"center"} justify={"start"}>
-          <Text textAlign={"center"} color={"red"} alignItems={"center"} mr={3}>
-            Samridh
-          </Text>
+          <Link to="/">
+            <Text
+              textAlign={"center"}
+              color={"gray.800"}
+              alignItems={"center"}
+              mr={3}
+            >
+              Samridh
+            </Text>
+          </Link>
         </Flex>
         <Flex display={{ base: "none", md: "flex" }} alignItems={"center"}>
           <DesktopNav />
@@ -79,9 +91,6 @@ const Navbar = () => {
               <Link to="contact">
                 <MenuItem icon={<MdOutlineContactPage />}>Contact</MenuItem>
               </Link>
-              <MenuDivider />
-              <MenuItem icon={<BsGithub />}>Github</MenuItem>
-              <MenuItem icon={<BsTwitter />}>Twitter</MenuItem>
             </MenuList>
           </Menu>
         </Flex>
@@ -91,9 +100,6 @@ const Navbar = () => {
 };
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue("gray.900", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
-
   return (
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
