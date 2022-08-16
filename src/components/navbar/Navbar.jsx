@@ -34,7 +34,6 @@ const Navbar = () => {
   return (
     <Box
       position={"fixed"}
-      overflow={"hidden"}
       top={0}
       w={"100%"}
       zIndex={2}
