@@ -11,8 +11,8 @@ const Main = () => {
           <Navbar />
         </Flex>
         <Flex
-          ml={{ base: 10, md: "200px" }}
-          mr={{ base: 10, md: "200px" }}
+          ml={{ base: 10, sm: 12, md: "120px", lg: "250px",xl:"400px" }}
+          mr={{ base: 10, sm: 12, md: "120px", lg: "250px" ,xl:"400px"}}
           mt={{ base: "70px", md: "100px" }}
         >
           <Outlet />

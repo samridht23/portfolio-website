@@ -60,6 +60,21 @@ const Navbar = () => {
             >
               Samridh
             </Text>
+            <Box display={{base:"block",sm:"none",md:"none",lg:"none"}}>
+              <Base />
+            </Box>
+            <Box display={{base:"none",sm:"block",md:"none",lg:"none"}}>
+              <Sm/>
+            </Box>
+            <Box display={{base:"none",sm:"none",md:"block",lg:"none"}}>
+              <Md/>
+            </Box>
+            <Box display={{base:"none",sm:"none",md:"none",lg:"block"}}>
+              <Lg/>
+            </Box>
+            <Box display={{base:"none",sm:"none",md:"none",lg:"none",xl:"block"}}>
+              <Xl/>
+            </Box>
           </Link>
         </Flex>
         <Flex display={{ base: "none", md: "flex" }} alignItems={"center"}>
@@ -95,6 +110,41 @@ const Navbar = () => {
           </Menu>
         </Flex>
       </Flex>
+    </Box>
+  );
+};
+const Base = () => {
+  return (
+    <Box>
+      <Text>base</Text>
+    </Box>
+  );
+};
+const Sm = () => {
+  return (
+    <Box>
+      <Text>sm</Text>
+    </Box>
+  );
+};
+const Md = () => {
+  return (
+    <Box>
+      <Text>md</Text>
+    </Box>
+  );
+};
+const Lg = () => {
+  return (
+    <Box>
+      <Text>lg</Text>
+    </Box>
+  );
+};
+const Xl= () => {
+  return (
+    <Box>
+      <Text>xl</Text>
     </Box>
   );
 };

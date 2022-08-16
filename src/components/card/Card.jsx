@@ -1,15 +1,54 @@
 import React from "react";
-import { Box, Flex, Text, Image, Divider } from "@chakra-ui/react";
+import {
+  List,
+  UnorderedList,
+  ListItem,
+  Box,
+  Flex,
+  Text,
+  Image,
+  Divider,
+  Link,
+} from "@chakra-ui/react";
 
 const Card = () => {
   return (
     <Box>
-      <Flex w={"315px"}>
-        <Image
-          src="https://bit.ly/naruto-sage"
-          alt="naruto"
-          objectFit="cover"
-        />
+      <Flex>
+        <UnorderedList>
+          <ListItem>
+            <Box display={"flex"}>
+              <Link href={"www.google.com"}>
+                <Text as={"u"}>Yify Clone</Text>
+              </Link>
+                <Text>Yify Clone made with React</Text>
+            </Box>
+          </ListItem>
+          <ListItem>
+            <Box display={"flex"}>
+              <Link href={"www.google.com"}>
+                <Text as={"u"}>Yify Clone</Text>
+              </Link>
+                <Text>Yify Clone made with React</Text>
+            </Box>
+          </ListItem>
+          <ListItem>
+            <Box display={"flex"}>
+              <Link href={"www.google.com"}>
+                <Text as={"u"}>Yify Clone</Text>
+              </Link>
+                <Text>Yify Clone made with React</Text>
+            </Box>
+          </ListItem>
+          <ListItem>
+            <Box display={"flex"}>
+              <Link href={"www.google.com"}>
+                <Text as={"u"}>Yify Clone</Text>
+              </Link>
+                <Text>Yify Clone made with React</Text>
+            </Box>
+          </ListItem>
+        </UnorderedList>
       </Flex>
     </Box>
   );

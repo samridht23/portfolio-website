@@ -8,6 +8,7 @@ import {
   Divider,
   SimpleGrid,
 } from "@chakra-ui/react";
+import "./styles/homestyle.scss";
 import Card from "../components/card/Card";
 import { FiGithub, FiTwitter } from "react-icons/fi";
 
@@ -79,12 +80,9 @@ const Home = () => {
               A showcase for things I've done.
             </Text>
           </Flex>
-          <SimpleGrid columns={[2, null, 3]} spacing="100px">
+          <Flex>
             <Card />
-            <Card />
-            <Card />
-            <Card />
-          </SimpleGrid>
+          </Flex>
         </Box>
       </Box>
     </Box>
