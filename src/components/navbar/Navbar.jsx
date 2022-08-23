@@ -61,20 +61,36 @@ const Navbar = () => {
             >
               Samridh
             </Text>
-            <Box display={{base:"block",sm:"none",md:"none",lg:"none"}}>
+            <Box
+              display={{ base: "block", sm: "none", md: "none", lg: "none" }}
+            >
               <Base />
             </Box>
-            <Box display={{base:"none",sm:"block",md:"none",lg:"none"}}>
-              <Sm/>
+            <Box
+              display={{ base: "none", sm: "block", md: "none", lg: "none" }}
+            >
+              <Sm />
             </Box>
-            <Box display={{base:"none",sm:"none",md:"block",lg:"none"}}>
-              <Md/>
+            <Box
+              display={{ base: "none", sm: "none", md: "block", lg: "none" }}
+            >
+              <Md />
             </Box>
-            <Box display={{base:"none",sm:"none",md:"none",lg:"block"}}>
-              <Lg/>
+            <Box
+              display={{ base: "none", sm: "none", md: "none", lg: "block" }}
+            >
+              <Lg />
             </Box>
-            <Box display={{base:"none",sm:"none",md:"none",lg:"none",xl:"block"}}>
-              <Xl/>
+            <Box
+              display={{
+                base: "none",
+                sm: "none",
+                md: "none",
+                lg: "none",
+                xl: "block",
+              }}
+            >
+              <Xl />
             </Box>
           </Link>
         </Flex>
@@ -142,7 +158,7 @@ const Lg = () => {
     </Box>
   );
 };
-const Xl= () => {
+const Xl = () => {
   return (
     <Box>
       <Text>xl</Text>
